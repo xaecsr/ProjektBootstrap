@@ -1,0 +1,35 @@
+html,body {
+    height: calc(100% - 10px);
+    margin-left: 10px;
+    margin-right: 10px;
+    }
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    right: 0;
+    width: 100%; 
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    height: 100%;
+    grid-gap: 20px;
+  }
+  
+  .grid-container > div {
+    background-color: goldenrod;
+    margin-top: 60px;
+    margin-bottom: 10px;
+  }
+
+  @media (max-width: 786px) {
+    .grid-container { grid-template-columns: repeat(1, 1fr); }
+    .grid-container > div {
+      background-color: goldenrod;
+      margin-top: 8%;
+    }
+  }
